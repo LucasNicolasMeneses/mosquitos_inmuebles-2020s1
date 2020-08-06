@@ -1,0 +1,205 @@
+Examen integrador  objetos 1    6/8/2020 
+Meneses Lucas Nicolas 
+
+ Respuestas :
+
+Mosquitos.
+
+1 
+La Clase Mosquitos que tien 2 atributos{ 
+   aguante = un numero
+   cantidadDePicados  = numero 
+
+tiene 3 metodos Propios 
+
+   methdo aguante()
+   metodo picadorFuerte()
+   methodo quierPicar ()
+}
+
+la clase mosquitoPesado herada de la case Mosquito{
+ tiene un atributo propio 
+ peso= un numero
+
+Sobreescribe el methodo picar()   
+y tiene un methodo propio que es peso()
+}  
+
+la clase MosquitoGloton hereda de Mosquito Pesado{
+
+sobreescribe el methodo quierePicar()
+}
+la clase Mosquito con  veneno hereda de Mosquito {
+posee un atributo propio veneno = un numero
+
+sobreescribe el methodo picar()
+y tiene un methodo propio que es descansar()
+}
+ 
+la case MosquitoConVenenoMortal hereda de la clase MosquitoConVeneno{
+ posee un atributo propio que es mortalidad = un numero
+sobreeescribe el methodo picar() , el methodo descansar() y el methodo quierePicar()
+y propios tiene method esMortal(), 
+}
+mosquitoAguantador hereda de MosquitoconVenenoMortal
+herada atributos y methodos y solo sobreescribe el method aguante()
+
+
+Resumen : 
+                         Mosquito
+                   var aguante
+                   var cantidadDePicados 
+                   method picar() 
+                   method aguante()
+                   method picadorFuerte()
+                   method quierePicar()
+
+                                               
+MosquitoPesado                                   MosquitoConVeneno 
+   //herencia                                    var aguante
+                                                 var cantidadDePicados 
+  var aguante                                    method picar() 
+  var cantdaDepicados                            method aguante()
+  method aguante()                               method picadorFuerte()    
+  method picadorFuerte()                         / propio 
+   method quierePicar()                           var veneno 
+  // prpio                                        overrride method quierePicar()
+  var peso                                        method descansar()
+  method peso()
+  overrride method picar()                                                
+                                                   MosquitoConVenenoMortal
+  MosquitoGloton                                         var aguante
+//herencia                                               var cantidadDePicados 
+var aguante                                             method aguante()
+var cantdaDepicados                                     method picadorFuerte() 
+var peso                                                method quierePicar()  
+ method aguante()                                      //propio
+ method picadorFuerte()                                  var mortalidad
+  method picar ()                                         overrride method picar()
+                                                          method esMortal()   
+override method quierePicar()                          override method descansar()   
+                                                        
+ 
+                                                    MosquitoAguantador   
+                                                    var cantidadDePicados 
+                                                     method picadorFuerte() 
+                                                     method quierePicar()  
+                                                      //propio
+                                                     var  mortalidad
+                                                     overrride method picar(
+                                                     method esMortal()   
+                                                     overridemethod aguante()
+
+
+
+
+
+
+
+                                                     
+respuesta numero 2                                                      
+ los atributos de los mosquitos creados en el test son:
+
+ Para mosquitoPesado los atributos heredados de Mosquito 
+   (aguante)= un numero
+   (cantidaDePicados) que es un numero
+ y el propio (peso) que es un numero. 
+
+Para MosquitoGloton
+son los heredados de MosquitoPesado
+aguante= numero
+cantiadDePicados=nume
+peso=numero
+
+Para MosquitoConVeneno los atributos son:
+heredados de Mosquito
+aguante=numero
+CantidadDePicados=numero
+//propio
+veneno = numero
+
+Para MosquitoConVenenoMortal 
+los atributos son 
+los heredados de MosquitoConVeneno
+aguante=numero
+cantidadDePicados= numero
+veneno= numero
+//propio
+mortalidad= numero
+
+Respuesta numero 3 
+los cuaro mosquitos en el test modifican su valor
+los que canvian de valor son 
+MosquitoPesado lo que hace es aumentar su peso 
+Mosquito mosquitoGloton hace lo mismo que MosquitoPesado
+MosquitoCon Veneno resta Guante y aumenta CantidadDePicados y resta  en 1 veneno
+MosquitoCon VenenoMortal hace lo mimo que mosquitConVeneno pero resta en 2  veneno
+
+Respuesta numerop 4
+ El mosquito N° 4 no quiere picar por que es un mosquitoConVenenoMortal
+ y para querer picar nesewcita aguante>500 y mortalidad>4 como una de estas condici0nes no se cumple el mosquito
+ no quierePicar.
+
+Respuestas N 5
+
+si sobreescribimos el methodo quierePicar() en MosquitoConVeneno 
+y ahora es quierePicar()= veneno>5 , la respuesta del punto anterior Cambia el mosquito 4 ahora si quierePicar()
+ya que las condiciones de su methodo quierePicar() se cumplen .
+
+Respuestas N° 6
+1 descansar() solo lo entienden MosquitoConVeneno, MOsquitoConVenenoMortal y MosquitoAguantador
+2 quierePicar() lo entienden Todos los objetos/clases Mosquitos(pesado,gloton,conVeneno,conVenenoMortal y aguantador) menos la clase estudiante esa no lo entiende.
+3 peso() la entiende MosquitoPesado y MosquitoGloton y  Estudiante 
+4 picadorFuerte() la entienden todas las Clases de mosquitos (pesado,gloton,conVeneno,conVenenoMortal y aguantador)
+5 esMortal() la entienden los MosquitoConVenenoMortal y el MosquitoAguantador
+
+Respuesta nuemro 7
+Mosquito 1 quierePicar() = verdadero (si quiere Picar)
+Mosquito 2 quierePicar() = falso (no quierePicar)
+Mosquito 3 quierePicar() = falso (no quiere picar)
+Mosquito 4 quierePicar() = verdadero (si quiere picar)
+
+Respuesta N° 8
+Mosquito 4 esMortal() = falso ya que nesecita 2 condiciones mortalidad>10 (si se cumple) y aguante > 2000 (no se cumple) 
+Mosquito 5 esMortal() = verdader ya que que el aguante de el mosquito aguantador aumenta 500 mas por ende su aguante no es de 1800 sino de 2300 haciendo que ambas condiciones se cumplan para este mosquito
+
+Respuesta n° 9 
+
+                                                     
+                Respuesta n° 9 
+//1
+class MosquitoConVenenoVenenoSabio inherits MosquitoConVeneno {
+   override method picadorFuerte(){
+   	return veneno >50 or super() 
+   }
+   	
+}
+
+//2 
+class MosquitoConFiaca inherits Mosquito {
+	override method quierePicar() {
+		return false
+	}
+}
+ Respuesta N° 1 inmuebles 
+para crear eñ inmueble Departamento me faltan varios methos por ejemplo el methodo ponerBalcon() que nisiquiera hesta creado ni lo acrlara , modificar el method cuantaGentePuedeVivir() para que puedean entrar 3 personas
+y se le hace new a la clase inmueble osea Departamento = new Inmueble() despues del new agregarle por parametros los atributos para eso es nesecario crear un constructor . 
+
+//2 el ejercicio podria delegar la responsabilidida de tareas en ves de usar tantos bloque con if podria abstraerce y crear methodos que hagan la funcion de construir un inmueble .
+las caracterieticas podrian no ser una clase y ser parte de inmuebles.
+//3
+                                     
+                                                        
+                                                     
+                                                  
+
+ 
+
+
+
+
+
+
+
+
+
